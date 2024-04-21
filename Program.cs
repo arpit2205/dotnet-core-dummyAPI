@@ -24,6 +24,12 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+else if (app.Environment.IsProduction())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.MapGet("/", () => "Hello World!");
 
 app.Run();
