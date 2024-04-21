@@ -26,4 +26,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 
 app.MapGet("/", () => "Hello World!");
 
+app.MapGet("/testGet", () => "Successful Azure Deployment!");
+
 app.Run();
